@@ -1,6 +1,4 @@
 import '../../assets/styleSheet/style.css'
-import bgimg from '../../assets/image/hikkaduwa-mobile.jpg'
-
 function overView() {
   return (
     <div className='overview'>

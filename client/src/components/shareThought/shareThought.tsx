@@ -1,5 +1,3 @@
-import React from 'react'
-
 function shareThought() {
   return (
     <div className="w-full text-center py-6 border-b border-gray-400 bg-gray-100">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import tmpkand from '../../assets/image/43422283775_3afeca834f_b.jpg'
 import ningarch from '../../assets/image/nineArch.jpg'
 import seegiri from '../../assets/image/seegiriya.jpg'

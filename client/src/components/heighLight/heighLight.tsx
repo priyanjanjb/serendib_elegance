@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 
 // ✅ Import all 9 images
 import spices from '../../assets/image/spices.jpg'
