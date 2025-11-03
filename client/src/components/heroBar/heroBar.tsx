@@ -1,10 +1,10 @@
 import '../../assets/styleSheet/style.css'
-import videos from '../../assets/video/1101.mp4'
 function heroBar() {
+  const videoUrl = "https://drive.google.com/uc?export=download&id=1SZVRTGlDvxTNRrqbExatb_lSvalSx3mc" // replace with your actual ID
   return (
     <div className='herobar'>
       <div className="videosection">
-        <video src={videos} autoPlay loop muted className="w-full h-full object-cover" />
+        <video src={videoUrl} autoPlay loop muted className="w-full h-full object-cover" />
       </div>
     </div>
   )
