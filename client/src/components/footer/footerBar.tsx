@@ -1,4 +1,3 @@
-import React from "react";
 import "../../assets/styleSheet/style.css"; // External Tailwind CSS file
 
 function FooterBar() {
