@@ -1,8 +1,14 @@
-import React from 'react'
+import '../../assets/styleSheet/style.css'
+import bgimg from '../../assets/image/hikkaduwa-mobile.jpg'
 
 function overView() {
   return (
-    <div>overView</div>
+    <div className='overview'>
+      <h1 className='overviewheding'>Overview</h1>
+      <p className='overviewpara'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's <br />
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make <br />
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+    </div>
   )
 }
 

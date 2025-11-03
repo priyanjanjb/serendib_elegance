@@ -1,0 +1,280 @@
+/* stylelint-disable at-rule-no-unknown */
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable at-rule-no-unknown */
+
+
+
+/*app styles*/
+.backPanel{
+    @apply min-h-screen p-2;
+}
+
+/* navigation bar styles*/
+.navBar {
+    @apply bg-zinc-500/50 pt-2 pb-2 px-8 flex gap-4;
+}
+
+.logo {
+    @apply text-black font-bold opacity-100;
+}
+.logoSize {
+    @apply w-8 h-8 inline-block mx-2;
+}
+
+
+/* hero section styles */
+.herobar {
+    @apply bg-blue-200;
+}
+
+/*Overview*/
+.overviewpara {
+    @apply text-gray-700 text-lg flex justify-center;
+}
+
+.overviewheding {
+    @apply text-4xl font-bold text-gray-900 flex  mt-2 pl-4;
+}
+
+
+/* --- Attraction Bar --- */
+.attractionBar {
+  @apply flex flex-col items-center bg-white py-10 px-5 w-full;
+}
+
+.attHeading {
+  @apply text-2xl font-bold text-gray-800 mb-6 text-center;
+}
+
+.attContentVertical {
+  @apply flex flex-col items-center gap-6 w-full;
+}
+
+/* Full-width + full-height image cards with overlay title */
+.attCardVertical {
+  @apply relative w-full max-w-7xl h-screen overflow-hidden shadow-md transition-transform duration-300 hover:scale-105;
+}
+
+.attImgVertical {
+  @apply w-full h-full object-cover;
+}
+
+/* Overlay title text */
+.attCardTitle {
+  @apply absolute bottom-0 left-0 w-full bg-black/50 text-white text-lg font-semibold py-4 px-6 text-left;
+}
+
+/* Button styling */
+.seeMoreBtn {
+  @apply mt-8 px-6 py-2 bg-[#D9D9D9] text-black rounded-full text-base font-medium transition-colors duration-300 hover:bg-[#a83535] hover:text-white;
+}
+
+/* Destination Bar*/
+.destination-section {
+  @apply px-8 py-10;
+}
+
+.destination-title {
+  @apply text-xl font-medium mb-6;
+}
+
+/* Horizontal scroll container */
+.destination-scroll {
+  @apply flex gap-6 overflow-x-auto border border-gray-300 rounded-lg p-4;
+  scrollbar-width: thin; /* Firefox scrollbar styling */
+  scrollbar-color: #9ca3af #f3f4f6; /* Gray thumb + light track */
+}
+
+/* WebKit browsers (Chrome, Safari, Edge) scrollbar styling */
+.destination-scroll::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+.destination-scroll::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 8px;
+}
+
+.destination-scroll::-webkit-scrollbar-thumb {
+  background-color: #9ca3af;
+  border-radius: 8px;
+}
+
+/* Box styles */
+.destination-box {
+  @apply min-w-[400px] h-[450px] bg-gray-500 rounded-lg flex items-center justify-center shadow-md flex-shrink-0;
+}
+
+
+
+
+
+/*planning tools*/
+
+.planning-section {
+  @apply relative bg-cover bg-center bg-no-repeat py-20 px-8;
+  
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark overlay for readability */
+.overlay {
+  @apply   p-10 rounded-2xl w-full max-w-7xl backdrop-blur-3xl;
+  background-image: url('../image/hikkaduwa-mobile.jpg')
+}
+
+/* Section title */
+.planning-title {
+  @apply text-3xl font-bold text-white mb-10;
+}
+
+/* 3x3 grid layout */
+.planning-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+/* Individual cards */
+.planning-card {
+  @apply bg-gray-400  backdrop-blur-md rounded-lg p-6 shadow-lg text-gray-100;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card title */
+.card-title {
+  @apply text-lg font-semibold mb-3 text-white;
+}
+
+/* Card text */
+.card-text {
+  @apply text-sm text-gray-200 leading-relaxed;
+}
+
+/* Gray placeholder button */
+.card-btn {
+  @apply w-40 h-4 bg-gray-300 rounded-full mx-auto mt-4;
+    animation: pulse 1.5s infinite;
+}
+
+
+
+
+
+/*photo section*/
+.photo-section {
+  @apply relative w-full h-[500px] overflow-hidden border-y-4 border-blue-500 shadow-lg;
+}
+
+.photo-section__track {
+  @apply flex transition-transform duration-700 ease-in-out w-full;
+}
+
+.photo-section__slide {
+  @apply w-full h-full object-cover flex-shrink-0;
+}
+
+.photo-section__arrow {
+  @apply absolute top-1/2 -translate-y-1/2 bg-gray-800/60 text-white text-4xl px-4 py-2 rounded-full transition-opacity duration-300;
+}
+
+.photo-section__arrow--left {
+  @apply left-5;
+}
+
+.photo-section__arrow--right {
+  @apply right-5;
+}
+
+.photo-section__hidden {
+  @apply opacity-0 pointer-events-none;
+}
+
+.photo-section__visible {
+  @apply opacity-100;
+}
+
+@media (max-width: 768px) {
+  .photo-section {
+    @apply h-[300px];
+  }
+
+  .photo-section__arrow {
+    @apply text-3xl px-3 py-1;
+  }
+}
+
+.photo-section__arrow:hover {
+  @apply bg-gray-800/80 scale-105;
+}
+
+
+
+/*logo section*/
+
+/*footer section*/
+.findus-container {
+  @apply w-full text-center py-6 border-b border-gray-400 bg-gray-100;
+}
+
+.findus-title {
+  @apply text-lg font-medium mb-4;
+}
+
+.findus-icons {
+  @apply flex justify-center gap-6;
+}
+
+.findus-icon {
+  @apply w-10 h-10 bg-gray-400 rounded-full;
+}
+
+
+
+
+/*footer section*/
+
+.footerbar-container {
+  @apply w-full bg-gray-400 text-white py-6 flex flex-col md:flex-row justify-around text-sm;
+}
+
+.footerbar-section {
+  @apply text-center md:text-left mb-6 md:mb-0;
+}
+
+.footerbar-title {
+  @apply font-semibold mb-2;
+}
+
+.footerbar-list {
+  @apply space-y-1;
+}
+
+.footerbar-center {
+  @apply text-center mb-6 md:mb-0;
+}
+
+.footerbar-right {
+  @apply text-center;
+}
+
+.footerbar-icons {
+  @apply flex justify-center gap-3;
+}
+
+.footerbar-icon {
+  @apply w-8 h-8 bg-gray-300 rounded-full;
+}
+
+
+
+
+
+

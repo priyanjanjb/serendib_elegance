@@ -4,21 +4,29 @@ import OverView from "./components/overView/overView"
 import HeighLight from "./components/heighLight/heighLight"
 import AttractionBar from "./components/attraction/attractionBar"
 import LogoSection from "./components/logoSection/logoSection"
-import EmailSection from "./components/emailSection/emailSection"
+import PlanningTools from "./components/planningTool/plannigTools"
+import Destination from "./components/destination/destination"
 import FooterBar from "./components/footer/footerBar"
-
+import PhotoSection from "./components/photoSection/photoSection"
+import '../src/assets/styleSheet/style.css'
+import FindUs from "./components/findUs/FindUs"
+import ShareThought from '../src/components/shareThought/shareThought'
 function App() {
 
   return (
-    <div>
+    <div className="backPanel">
       <NavBar/>
       <HeroBar/>
       <OverView/>
       <HeighLight />
       <AttractionBar />
+      <Destination />
+      <PlanningTools />
+      <PhotoSection />
       <LogoSection />
-      <EmailSection />
-      <FooterBar/>
+      <FindUs />
+      <ShareThought />
+      <FooterBar />
     </div>
   )
 }
