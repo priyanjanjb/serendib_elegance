@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div className="backPanel">
-      <NavBar/>
       <HeroBar/>
       <OverView/>
       <HeighLight />
