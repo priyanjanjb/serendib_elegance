@@ -1,4 +1,4 @@
-import NavBar from "./components/navBar/navBar"
+
 import HeroBar from "./components/heroBar/heroBar"
 import OverView from "./components/overView/overView"
 import HeighLight from "./components/heighLight/heighLight"

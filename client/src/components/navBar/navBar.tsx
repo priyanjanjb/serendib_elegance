@@ -5,9 +5,8 @@ import instLogo from '../../assets/image/logoes/ig-instagram-icon.svg';
 import taLogo from '../../assets/image/logoes/tripadvisor-icon.svg';
 
 
-interface Props {}
 
-function NavBar(props: Props) {
+function NavBar() {
   const [darkMode, setDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,7 +25,6 @@ function NavBar(props: Props) {
       <div className="flex items-center">
         <p className="logo">logo</p>
       </div>
-
       {/* Center: Email & Phone */}
       <div className="flex flex-col items-center">
         <p className="emailSection">serendibeligance@gmail.com</p>
