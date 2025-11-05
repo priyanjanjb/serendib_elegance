@@ -2,7 +2,7 @@
 import HeroBar from "./components/heroBar/heroBar"
 import OverView from "./components/overView/overView"
 import HeighLight from "./components/heighLight/heighLight"
-import AttractionBar from "./components/attraction/attractionBar"
+//import AttractionBar from "./components/attraction/attractionBar"
 import LogoSection from "./components/logoSection/logoSection"
 import PlanningTools from "./components/planningTool/plannigTools"
 import Destination from "./components/destination/destination"
@@ -18,7 +18,7 @@ function App() {
       <HeroBar/>
       <OverView/>
       <HeighLight />
-      <AttractionBar />
+      
       <Destination />
       <PlanningTools />
       <PhotoSection />

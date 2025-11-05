@@ -42,7 +42,7 @@ function HeighLight() {
         onClick={() => scroll('left')}
         className="absolute left-3 z-10 bg-white/70 hover:bg-white text-gray-700 rounded-full p-2 shadow-md hidden md:block transition"
       >
-        ◀
+        &#10094;
       </button>
 
       {/* Scrollable Image Row */}
@@ -70,7 +70,7 @@ function HeighLight() {
         onClick={() => scroll('right')}
         className="absolute right-3 z-10 bg-white/70 hover:bg-white text-gray-700 rounded-full p-2 shadow-md hidden md:block transition"
       >
-        ▶
+       &#10095;
       </button>
 
       {/* Overlay Button */}
