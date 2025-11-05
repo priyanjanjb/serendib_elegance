@@ -31,8 +31,30 @@
 }
 
 /*Overview*/
+.overview {
+  @apply relative bg-white mt-6 mb-6 rounded-lg shadow-md overflow-hidden;
+}
+
+.overview::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../image/hikkadu.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Adjust blur level as needed */
+  transform: scale(1.1); /* Prevents edges from cutting off due to blur */
+  z-index: 0;
+}
+
+.overview > * {
+  position: relative;
+  z-index: 1; /* Keeps content above blurred background */
+}
+
+
 .overviewpara {
-    @apply text-gray-700 text-lg flex justify-center;
+    @apply text-gray-700 text-lg flex justify-center p-4;
 }
 
 .overviewheding {
