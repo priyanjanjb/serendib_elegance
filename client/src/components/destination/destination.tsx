@@ -86,7 +86,7 @@ const DestinationSection = () => {
         {destinations.map((dest, index) => (
           <div
             key={index}
-            className="destination-box flex flex-col items-start justify-start overflow-hidden"
+            className="destination-box"
           >
             <img
               src={dest.image}

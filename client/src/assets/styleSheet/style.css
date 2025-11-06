@@ -15,22 +15,82 @@
 
 /* Navigation bar styles */
 .navBar {
-  @apply bg-zinc-800/50 pt-3 pb-3 px-8 flex gap-4 shadow-none;
+  @apply bg-black dark:bg-gray-900/50 text-white flex justify-between items-center px-8 py-3 shadow-md fixed top-0 left-0 w-full z-50 backdrop-blur-md;
 }
 
-/* Logo */
+/* Logo section */
+.navLeft {
+  @apply flex items-center gap-3;
+}
+
 .mainLogo {
   @apply h-12 w-auto object-contain;
 }
 
-/* Contact info */
-.contactText {
-  @apply text-white font-medium;
+/* Center contact info */
+.navCenter {
+  @apply hidden md:flex flex-col text-center;
 }
 
-/* Social icon sizing */
+.contactText {
+  @apply text-sm text-white/90 font-medium;
+}
+
+/* Right section */
+.navRight {
+  @apply flex items-center gap-4;
+}
+
+/* Social icons */
+.socialIcons {
+  @apply flex items-center;
+}
+
 .logoSize {
-  @apply w-7 h-7 inline-block mx-1;
+  @apply w-6 h-6 mx-1 hover:scale-110 transition-transform duration-200;
+}
+.fbIcon {
+  @apply fill-white w-6 h-5 mx-1 hover:scale-110 transition-transform duration-200;
+}
+
+.instagramIcon {
+  @apply fill-red-50 w-6 h-6 mx-1 hover:scale-110 transition-transform duration-200;
+}
+
+.tripAdvisorIcon {
+  @apply w-7 h-7 mx-1 hover:scale-110 transition-transform duration-200;
+}
+
+/* Dark mode button */
+.darkToggle {
+  @apply cursor-pointer;
+}
+
+/* Menu toggle */
+.menuToggle {
+  @apply flex items-center cursor-pointer;
+}
+
+/* Chevron icon animation */
+.dropdownIcon {
+  @apply ml-1 transition-transform duration-300;
+}
+
+.dropdownIcon.rotate {
+  @apply rotate-180;
+}
+
+/* Mobile menu */
+.mobileMenu {
+  @apply hidden flex-col absolute top-full right-4 bg-black/60 backdrop-blur-lg rounded-lg shadow-lg p-4 space-y-2 transition-all duration-300 ease-in-out;
+}
+
+.mobileMenu a {
+  @apply text-white hover:text-yellow-300 transition-colors;
+}
+
+.mobileMenu.open {
+  @apply flex;
 }
 
 
@@ -40,6 +100,63 @@
 .herobar {
     @apply bg-blue-200;
 }
+
+
+
+/* HeighLight.css */
+
+/* Container */
+.highlight-container {
+  @apply relative w-full h-[450px] bg-white flex justify-center items-center overflow-hidden;
+}
+
+/* Scroll buttons */
+.scroll-btn {
+  @apply absolute z-10 bg-white/70 hover:bg-white text-gray-700 rounded-full p-2 shadow-md hidden md:block transition;
+}
+
+.scroll-btn-left {
+  @apply left-3;
+}
+
+.scroll-btn-right {
+  @apply right-3;
+}
+
+/* Scrollable image row */
+.scroll-row {
+  @apply flex w-full h-full overflow-x-auto overflow-y-hidden scroll-smooth;
+}
+
+/* Image overlay on hover */
+.image-wrapper {
+  @apply relative max-w-[200px] min-w-[150px] md:min-w-[250px] h-full overflow-hidden transform -skew-x-6 flex-shrink-0;
+}
+
+.image-wrapper img {
+  @apply w-full h-full object-cover transform skew-x-6;
+}
+
+/* Overlay with white + backdrop blur on hover */
+.image-wrapper::after {
+  content: '';
+  @apply absolute inset-0 bg-white opacity-0 transition-opacity duration-300 backdrop-blur-lg;
+}
+
+.image-wrapper:hover::after {
+  @apply opacity-60 backdrop-blur-3xl;
+}
+
+
+/* Overlay book button */
+.overlay-btn-container {
+  @apply absolute inset-0 flex justify-center items-center pointer-events-none;
+}
+
+
+
+
+
 
 /*Overview*/
 
@@ -108,7 +225,7 @@
 
 /* Destination Bar*/
 .destination-section {
-  @apply px-8 py-10;
+  @apply px-8 py-10 backdrop-blur-md bg-white/70 rounded-lg shadow-md;
 }
 
 .destination-title {
@@ -140,11 +257,8 @@
 /* Box styles */
 /* Box styles */
 .destination-box {
-  @apply min-w-[400px] w-[400px] h-[550px] bg-gray-500 rounded-lg shadow-md flex-shrink-0 flex flex-col overflow-hidden;
+  @apply min-w-[400px] w-[400px] h-[550px] bg-gray-500  rounded-lg shadow-md flex-shrink-0 flex flex-col overflow-hidden;
 }
-
-
-
 
 
 
@@ -178,7 +292,7 @@
 
 /* Individual cards */
 .planning-card {
-  @apply bg-gray-400  backdrop-blur-md rounded-lg p-6 shadow-lg text-gray-100;
+  @apply bg-gray-400/50  backdrop-blur-md rounded-lg p-6 shadow-lg text-gray-100;
   height: 300px;
   display: flex;
   flex-direction: column;
