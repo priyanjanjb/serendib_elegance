@@ -12,6 +12,8 @@ import touris from '../../assets/image/tuarist.jpg';
 import bath from '../../assets/image/bath.jpg';
 
 function HeighLight() {
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+
   const images = [
     spices,
     tealeaf,
@@ -24,7 +26,17 @@ function HeighLight() {
     bath,
   ];
 
-  const scrollRef = useRef<HTMLDivElement | null>(null);
+  const names = [
+    "Spices",
+    "Tea Leaf",
+    "Pagoda",
+    "Dalada",
+    "Seegiriya",
+    "Hikkaduwa",
+    "Waterfall",
+    "Tourist Spot",
+    "Bath",
+  ];
 
   const scroll = (direction: 'left' | 'right') => {
     const { current } = scrollRef;
@@ -40,15 +52,27 @@ function HeighLight() {
       <button onClick={() => scroll('left')} className="scroll-btn scroll-btn-left">
         &#10094;
       </button>
+    <div ref={scrollRef} className="scroll-row">
+  {images.map((img, index) => (
+    <div key={index} className="image-wrapper">
+      <img src={img} alt={`slide-${index}`} />
 
-      {/* Scrollable Image Row */}
-      <div ref={scrollRef} className="scroll-row">
-        {images.map((img, index) => (
-          <div key={index} className="image-wrapper">
-            <img src={img} alt={`slide-${index}`} />
-          </div>
-        ))}
+      {/* White overlay with blur */}
+      <div className="hover-overlay"></div>
+
+      {/* Title + See More button */}
+      <div className="hover-content">
+        <div className="image-name">{names[index]}</div>
+        <button
+          className="see-more-btn"
+        >
+          See More
+        </button>
       </div>
+    </div>
+  ))}
+</div>
+
 
       {/* Right Scroll Button */}
       <button onClick={() => scroll('right')} className="scroll-btn scroll-btn-right">
