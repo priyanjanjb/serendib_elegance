@@ -425,8 +425,10 @@
 /*footer section*/
 
 .footerbar-container {
-  @apply w-full bg-gray-400 text-white py-6 flex flex-col md:flex-row justify-around text-sm;
+  @apply w-full text-white py-6 flex flex-col md:flex-row justify-around text-sm bg-cover bg-center bg-no-repeat;
+  background-image: url('../image/srilankanbeauty.png');
 }
+
 
 .footerbar-section {
   @apply text-center md:text-left mb-6 md:mb-0;
