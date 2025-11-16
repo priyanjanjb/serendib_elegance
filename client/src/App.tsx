@@ -18,7 +18,6 @@ function App() {
       <HeroBar/>
       <OverView/>
       <HeighLight />
-      
       <Destination />
       <PlanningTools />
       <PhotoSection />

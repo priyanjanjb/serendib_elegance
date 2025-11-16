@@ -27,24 +27,24 @@ function HeighLight() {
   ];
 
   const names = [
-    "Spices",
-    "Tea Leaf",
-    "Pagoda",
-    "Dalada",
+    "Foods",
+    "Hills",
+    "Culture",
+    "Temple of Tooth",
     "Seegiriya",
-    "Hikkaduwa",
+    "Beach Side",
     "Waterfall",
     "Tourist Spot",
-    "Bath",
+    "Ayuruweda",
   ];
 
   const scroll = (direction: 'left' | 'right') => {
-    const { current } = scrollRef;
-    if (current) {
-      const scrollAmount = direction === 'left' ? -300 : 300;
-      current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
-  };
+  const { current } = scrollRef;
+  if (current) {
+    const scrollAmount = direction === 'left' ? -300 : 300;
+    current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+};
 
   return (
     <div className="highlight-container">
@@ -52,33 +52,29 @@ function HeighLight() {
       <button onClick={() => scroll('left')} className="scroll-btn scroll-btn-left">
         &#10094;
       </button>
-    <div ref={scrollRef} className="scroll-row">
-  {images.map((img, index) => (
-    <div key={index} className="image-wrapper">
-      <img src={img} alt={`slide-${index}`} />
 
-      {/* White overlay with blur */}
-      <div className="hover-overlay"></div>
+      <div ref={scrollRef} className="scroll-row">
+        {images.map((img, index) => (
+          <div key={index} className="image-wrapper">
+            <img src={img} alt={`slide-${index}`} />
+            
+            {/* White overlay with blur */}
+            <div className="hover-overlay">
+              {/* Title + See More button */}
+              <div className="hover-content">
+                <div className="slot-title">{names[index]}</div>
+                <button className="see-more-btn"> See More</button>
+              </div>
+            </div>
 
-      {/* Title + See More button */}
-      <div className="hover-content">
-        <div className="image-name">{names[index]}</div>
-        <button
-          className="see-more-btn"
-        >
-          See More
-        </button>
+          </div>
+        ))}
       </div>
-    </div>
-  ))}
-</div>
-
 
       {/* Right Scroll Button */}
       <button onClick={() => scroll('right')} className="scroll-btn scroll-btn-right">
         &#10095;
       </button>
-
     </div>
   );
 }

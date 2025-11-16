@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 import "../../assets/styleSheet/style.css";
 import leopard from "../../assets/image/leopard.jpg";
 import nineArch from "../../assets/image/nineArch.jpg";
@@ -7,6 +9,16 @@ import sigiriya from "../../assets/image/seegiriya.jpg";
 import statue from "../../assets/image/statue.jpg";
 
 const DestinationSection = () => {
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+  const { current } = scrollRef;
+  if (current) {
+    const scrollAmount = direction === 'left' ? -1400 : 1400;
+    current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+  };
+
   const destinations = [
     {
       image: leopard,
@@ -80,38 +92,55 @@ const DestinationSection = () => {
   ];
 
   return (
-    <section className="destination-section">
-      <h2 className="destination-title">Destination</h2>
-      <div className="destination-scroll">
-        {destinations.map((dest, index) => (
-          <div
-            key={index}
-            className="destination-box"
-          >
-            <img
-              src={dest.image}
-              alt={dest.title}
-              className="w-full h-48 object-cover rounded-t-lg"
-            />
-            <div className="p-4 text-white flex flex-col justify-between">
-              <div>
-                <h3 className="text-xl font-semibold mb-1">{dest.title}</h3>
-                <p className="text-sm mb-2">{dest.duration}</p>
-                <h4 className="font-semibold mb-1">Tour Highlights:</h4>
-                <ul className="list-disc list-inside text-sm mb-3">
-                  {dest.highlights.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mt-2">
-                More Details
-              </button>
-            </div>
+    <div className="destination-section">
+      <div className="destinatio-wrap">
+          <h2 className="destination-title">Destination</h2>
+        <div className="destination-scroll" ref={scrollRef}>
+          {/* Left Scroll Button */}
+          <div className='destination-scroll-btn'>
+            <button onClick={() => scroll('left')} className="scroll-btn scroll-btn-left">
+              &#10094;
+            </button>
           </div>
-        ))}
+          {destinations.map((dest, index) => (
+            <div key={index} className="destination-box">
+              <img
+                src={dest.image}
+                alt={dest.title}
+                className="destination-image"
+              />
+              <div className="destination-area">
+                <div className="destination-">
+                  <h3 className="destination-caption">{dest.title}</h3>
+                  <p className="destination-duration">{dest.duration}</p>
+                  <h4 className="destination-subTitle">Tour Highlights:</h4>
+                  <ul className="destination-description">
+                    {dest.highlights.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="buttonSection">
+                  <button className="more-details-button">
+                    More Details
+                  </button>
+                </div>
+                
+              </div>
+            </div>
+          ))}
+          <div className='destination-scroll-btn'>
+            {/* Right Scroll Button */}
+            <button onClick={() => scroll('right')} className="scroll-btn scroll-btn-right">
+              &#10095;
+            </button>
+          </div>
+          
+        </div>
       </div>
-    </section>
+      
+      
+    </div>
   );
 };
 

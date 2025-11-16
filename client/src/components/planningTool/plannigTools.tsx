@@ -41,7 +41,7 @@ const cards = [
 
 const PlanningTools = () => {
   return (
-    <section className="planning-section">
+    <div className="planning-section">
       <div className="overlay">
         <h2 className="planning-title">Planning Tools</h2>
 
@@ -55,7 +55,7 @@ const PlanningTools = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -5,13 +5,27 @@
 @tailwind utilities;
 /* stylelint-enable at-rule-no-unknown */
 
+/* General styles */
+
+/* Scroll buttons */
+.scroll-btn {
+  @apply absolute z-10 bg-white/70 hover:bg-gray-200 text-gray-700 rounded-full p-2 shadow-md hidden md:block transition;
+}
+
+.scroll-btn-left {
+  @apply left-3;
+}
+
+.scroll-btn-right {
+  @apply right-3;
+}
+
 
 
 /*app styles*/
 .backPanel{
     @apply min-h-screen p-2;
 }
-
 
 /* Navigation bar styles */
 .navBar {
@@ -93,9 +107,6 @@
   @apply flex;
 }
 
-
-
-
 /* hero section styles */
 .herobar {
     @apply bg-blue-200;
@@ -103,40 +114,27 @@
 
 
 
-/* HeighLight.css */
 
+/* HeighLight.css */
 /* Container */
 .highlight-container {
-  @apply relative w-full h-[450px] bg-white flex justify-center items-center overflow-hidden;
+  @apply relative w-full h-[450px] bg-white flex justify-center items-center;
 }
 
-/* Scroll buttons */
-.scroll-btn {
-  @apply absolute z-10 bg-white/70 hover:bg-white text-gray-700 rounded-full p-2 shadow-md hidden md:block transition;
-}
 
-.scroll-btn-left {
-  @apply left-3;
-}
-
-.scroll-btn-right {
-  @apply right-3;
-}
 
 /* Scrollable image row */
 .scroll-row {
-  @apply flex w-full h-full overflow-x-auto overflow-y-hidden scroll-smooth;
+  @apply flex w-full h-full overflow-hidden scroll-smooth;
 }
-
-
 
 
 .image-wrapper {
-  @apply relative max-w-[200px] min-w-[150px] md:min-w-[250px] h-full overflow-hidden transform -skew-x-6 flex-shrink-0;
+  @apply   m-[1px] max-w-[200px] min-w-[150px] md:min-w-[250px] h-full overflow-hidden transform -skew-x-6 ;
 }
 
 .image-wrapper img {
-  @apply w-full h-full object-cover transform skew-x-6 transition-all duration-300;
+  @apply w-full h-full object-cover transform transition-all duration-300;
 }
 
 /* White overlay + blur effect */
@@ -145,7 +143,7 @@
 }
 
 .image-wrapper:hover .hover-overlay {
-  @apply bg-white/50;
+  @apply bg-white/50 ;
 }
 
 .image-wrapper:hover img {
@@ -162,12 +160,12 @@
 }
 
 /* Title */
-.image-wrapper .image-name {
+.image-wrapper {
   @apply text-xl font-bold text-gray-800 mb-2 text-center;
 }
 
 /* See More button below title */
-.image-wrapper .see-more-btn {
+.see-more-btn {
   @apply px-4 py-1 bg-orange-400 text-white font-semibold rounded-full shadow-md hover:bg-orange-500 transition;
 }
 
@@ -245,8 +243,9 @@
 
 /* Destination Bar*/
 .destination-section {
-  @apply px-8 py-10 backdrop-blur-md bg-white/70 rounded-lg shadow-md;
+  @apply px-8 py-10;
 }
+
 
 .destination-title {
   @apply text-xl font-medium mb-6;
@@ -254,49 +253,60 @@
 
 /* Horizontal scroll container */
 .destination-scroll {
-  @apply flex gap-6 overflow-x-auto border border-gray-300 rounded-lg p-4;
-  scrollbar-width: thin; /* Firefox scrollbar styling */
-  scrollbar-color: #9ca3af #f3f4f6; /* Gray thumb + light track */
+  @apply flex gap-6 overflow-x-hidden ;
 }
 
-/* WebKit browsers (Chrome, Safari, Edge) scrollbar styling */
-.destination-scroll::-webkit-scrollbar {
-  height: 8px; /* Horizontal scrollbar height */
-}
-
-.destination-scroll::-webkit-scrollbar-track {
-  background: #f3f4f6;
-  border-radius: 8px;
-}
-
-.destination-scroll::-webkit-scrollbar-thumb {
-  background-color: #9ca3af;
-  border-radius: 8px;
-}
-
-/* Box styles */
 /* Box styles */
 .destination-box {
-  @apply min-w-[400px] w-[400px] h-[550px] bg-gray-500  rounded-lg shadow-md flex-shrink-0 flex flex-col overflow-hidden;
+  @apply min-w-[400px] w-[400px] h-[550px] bg-gray-400 backdrop-blur-3xl rounded-lg shadow-md flex-shrink-0 flex flex-col ;
 }
 
+.destination-image {
+  @apply w-full h-50 object-cover rounded-t-lg;
+}
 
+.destination-area{
+  @apply p-4 text-white flex flex-col justify-between h-70; 
+}
+
+.destination-caption {
+  @apply text-xl font-semibold mb-1 ;
+}
+
+.destination-duration{
+  @apply text-sm mb-2;
+}
+
+.destination-subTitle{
+  @apply font-semibold mb-2;
+}
+
+.destination-description{
+  @apply list-disc list-inside text-sm mb-3 h-35 overflow-y-auto;
+}
+
+.more-details-button{
+  @apply w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 ;
+}
+.buttonSection{
+  @apply m-4 flex justify-center;
+}
+
+.destination-scroll-btn{
+  @apply flex items-center;
+}
 
 
 /*planning tools*/
 
 .planning-section {
-  @apply relative bg-cover bg-center bg-no-repeat py-20 px-8;
-  
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @apply relative bg-cover bg-center bg-no-repeat py-20 min-h-screen flex items-center justify-center;
+
 }
 
 /* Dark overlay for readability */
 .overlay {
-  @apply   p-10 rounded-2xl w-full max-w-7xl backdrop-blur-3xl;
+  @apply   p-10 rounded-2xl w-full ;
   background-image: url('../image/hikkaduwa-mobile.jpg')
 }
 
