@@ -243,8 +243,8 @@
 
 /* Destination Bar*/
 .destination-section {
-  @apply px-8 py-10;
-}
+  @apply py-10 px-5 w-full;}
+
 
 
 .destination-title {

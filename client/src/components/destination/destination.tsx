@@ -93,8 +93,8 @@ const DestinationSection = () => {
 
   return (
     <div className="destination-section">
-      <div className="destinatio-wrap">
-          <h2 className="destination-title">Destination</h2>
+      <div className="destination-wrapper">
+        <h2 className="destination-title">Destination</h2>
         <div className="destination-scroll" ref={scrollRef}>
           {/* Left Scroll Button */}
           <div className='destination-scroll-btn'>
