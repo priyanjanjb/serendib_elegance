@@ -1,5 +1,5 @@
 import "../../assets/styleSheet/style.css"; // External Tailwind CSS file
-
+import { facebook , instagram , tripadvisor } from "../../assets/image/svg/svgIcons";
 function FooterBar() {
   return (
     <div className="footerbar-container">
@@ -30,9 +30,9 @@ function FooterBar() {
       <div className="footerbar-right">
         <h4 className="footerbar-title">Follow Us</h4>
         <div className="footerbar-icons">
-          <div className="footerbar-icon"></div>
-          <div className="footerbar-icon"></div>
-          <div className="footerbar-icon"></div>
+          {facebook({className:"fbIcon"})}
+          {instagram({className:"insIcon"})}
+          {tripadvisor({className:"tripAdvisorIcon"})}
         </div>
       </div>
     </div>
