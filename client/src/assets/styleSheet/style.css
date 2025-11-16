@@ -125,7 +125,7 @@
 
 /* Scrollable image row */
 .scroll-row {
-  @apply flex w-full h-full overflow-hidden scroll-smooth;
+  @apply flex w-full h-full overflow-auto overflow-y-hidden scroll-smooth;
 }
 
 
@@ -253,7 +253,7 @@
 
 /* Horizontal scroll container */
 .destination-scroll {
-  @apply flex gap-6 overflow-x-hidden ;
+  @apply flex gap-6 overflow-x-auto scroll-smooth  ;
 }
 
 /* Box styles */
