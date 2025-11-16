@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import svgr from 'vite-plugin-svgr'
 
 export default defineConfig({
-  plugins: [react(), tailwindcss(), svgr()],
+  plugins: [react(), tailwindcss(), svgr(),],
   build: {
     chunkSizeWarningLimit: 3000, // 3 MB
     rollupOptions: {

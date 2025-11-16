@@ -15,16 +15,16 @@ function App() {
 
   return (
     <div className="backPanel">
-      <HeroBar/>
-      <OverView/>
-      <HeighLight />
-      <Destination />
-      <PlanningTools />
-      <PhotoSection />
-      <LogoSection />
-      <FindUs />
-      <ShareThought />
-      <FooterBar />
+        <HeroBar/>
+        <OverView/>
+        <HeighLight />
+        <Destination />
+        <PlanningTools />
+        <PhotoSection />
+        <LogoSection />
+        <FindUs />
+        <ShareThought />
+        <FooterBar />
     </div>
   )
 }

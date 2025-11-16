@@ -1,5 +1,6 @@
 /* stylelint-disable at-rule-no-unknown */
 @import 'tailwindcss';
+@import 'tailwind-scrollbar-hide/v4';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +9,28 @@
 /* stylelint-enable at-rule-no-unknown */
 
 /* General styles */
+/*SVG Icons controller*/
+.fbIcon, .insIcon, .trpadvsr {
+  transition: fill 0.3s ease;
+} 
+.fbIcon, .insIcon, .trpadvsr {
+  @apply cursor-pointer m-1 fill-white;
+}
+
+.darkToggle:hover{
+  fill: yellow;
+}
+
+.fbIcon:hover {
+  fill: #1877f2; /* Facebook blue */
+}
+.insIcon:hover {
+  fill: #e1306c; /* Instagram gradient start */
+}
+.trpadvsr:hover {
+  fill: #34e89e; /* Tripadvisor green */
+}
+
 
 /* Scroll buttons */
 .scroll-btn {
@@ -24,9 +47,10 @@
 
 
 
+
 /*app styles*/
 .backPanel{
-    @apply min-h-screen p-2;
+    @apply min-h-screen p-2 bg-black;
 }
 
 /* Navigation bar styles */
@@ -70,7 +94,7 @@
 }
 
 .instagramIcon {
-  @apply fill-red-50 w-6 h-6 mx-1 hover:scale-110 transition-transform duration-200;
+  @apply fill-blue-500 w-6 h-6 mx-1 hover:scale-110 transition-transform duration-200;
 }
 
 .tripAdvisorIcon {
@@ -120,14 +144,14 @@
 /* HeighLight.css */
 /* Container */
 .highlight-container {
-  @apply relative w-full h-[450px] bg-white flex justify-center items-center;
+  @apply relative w-full h-[450px] flex justify-center items-center;
 }
 
 
 
 /* Scrollable image row */
 .scroll-row {
-  @apply flex w-full h-full overflow-auto overflow-y-hidden scroll-smooth ;
+  @apply flex w-full h-full overflow-auto scrollbar-hide scroll-smooth ;
 }
 
 
@@ -255,7 +279,7 @@
 
 /* Horizontal scroll container */
 .destination-scroll {
-  @apply flex gap-6 overflow-x-auto scroll-smooth;
+  @apply flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth;
 }
 
 /* Box styles */
@@ -407,7 +431,7 @@
 /*logo section*/
 
 .logo-bar {
-  @apply w-full flex justify-center items-center py-6 bg-white shadow-md;
+  @apply w-full flex justify-center items-center py-6  shadow-md;
 }
 
 .logo-image {
@@ -420,7 +444,7 @@
 
 /*footer section*/
 .findus-container {
-  @apply w-full text-center py-6 border-b border-gray-400 bg-gray-100;
+  @apply w-full text-white text-center py-6 border-b border-gray-400 ;
 }
 
 .findus-title {

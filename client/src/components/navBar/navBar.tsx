@@ -1,10 +1,8 @@
 import { useState } from "react";
 import logo from "../../assets/image/logo.png";
-import fb from "../../assets/image/logoes/facebook.svg";
-import instagram from '../../assets/image/logoes/instagram.svg'
-import trpadvisor from '../../assets/image/logoes/tripadvisor.svg'
 import { Moon, Sun, Menu, ChevronDown } from "lucide-react";
 import "../../assets/styleSheet/style.css"; 
+import { facebook , instagram , tripadvisor } from "../../assets/image/svg/svgIcons";
 
 function NavBar() {
   const [darkMode, setDarkMode] = useState(false);
@@ -32,10 +30,9 @@ function NavBar() {
       {/* Right - Icons and controls */}
       <div className="navRight">
         <div className="socialIcons">
-
-          <img src={fb} alt="Facebook" className="fbIcon" />
-          <img src={instagram} alt="Instagram" className="instagramIcon" />
-          <img src={trpadvisor} alt="Tripadvisor" className="tripAdvisorIcon" />
+          {facebook({className:"fbIcon"})}
+          {instagram({className:"insIcon"})}
+          {tripadvisor({className:"trpadvsrIcon"})}
         </div>
 
         <button onClick={toggleDarkMode} className="darkToggle" aria-label="Toggle Dark Mode">

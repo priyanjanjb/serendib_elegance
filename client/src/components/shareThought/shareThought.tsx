@@ -1,3 +1,5 @@
+import '../../assets/styleSheet/style.css';
+import email from "../../assets/image/logoes/sendEmail.svg"
 function shareThought() {
   return (
     <div className="w-full text-center py-6 border-b border-gray-400 bg-gray-100">
@@ -8,7 +10,9 @@ function shareThought() {
           placeholder="Enter your Email"
           className="px-3 py-1 rounded-l-lg border border-gray-300 focus:outline-none"
         />
-        <button className="px-4 py-1 bg-black text-white rounded-r-lg">●</button>
+        <button className="px-4 py-1 bg-black text-white rounded-r-lg">
+          <img src={email} alt="sendEmail" className="w-5 h-5"/>
+        </button>
       </div>
     </div>
   )
