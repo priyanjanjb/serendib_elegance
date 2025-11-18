@@ -34,15 +34,17 @@
 
 /* Scroll buttons */
 .scroll-btn {
-  @apply absolute z-10 bg-white/70 hover:bg-gray-200 text-gray-700 rounded-full p-2 shadow-md hidden md:block transition;
+  @apply absolute z-10 bg-white/40 
+  hover:bg-gray-200 text-gray-700 rounded-full p-2 
+  shadow-md hidden md:block transition;
 }
 
 .scroll-btn-left {
-  @apply left-3;
+  @apply left-5 text-2xl p-4;
 }
 
 .scroll-btn-right {
-  @apply right-3;
+  @apply right-5 text-2xl p-4;
 }
 
 
@@ -53,9 +55,14 @@
     @apply min-h-screen p-2 bg-black;
 }
 
+
+/*----------------------------------------------------------------------------------------------------------------*/
 /* Navigation bar styles */
 .navBar {
-  @apply bg-black dark:bg-gray-900/50 text-white flex justify-between items-center px-8 py-3 shadow-md fixed top-0 left-0 w-full z-50 backdrop-blur-md;
+  @apply bg-black dark:bg-gray-900/50 text-white 
+         flex justify-between items-center 
+         px-8 py-3 shadow-md fixed 
+         top-0 left-0 w-full z-50 backdrop-blur-md;
 }
 
 /* Logo section */
@@ -87,24 +94,32 @@
 }
 
 .logoSize {
-  @apply w-6 h-6 mx-1 hover:scale-110 transition-transform duration-200;
+  @apply w-6 h-6 mx-1 
+  hover:scale-110 transition-transform duration-200;
 }
 .fbIcon {
-  @apply fill-white w-6 h-5 mx-1 hover:scale-110 transition-transform duration-200;
+  @apply fill-white w-6 h-5 mx-1 
+  hover:scale-110 transition-transform duration-200;
 }
 
 .instagramIcon {
-  @apply fill-blue-500 w-6 h-6 mx-1 hover:scale-110 transition-transform duration-200;
+  @apply fill-blue-500 w-6 h-6 mx-1 
+  hover:scale-110 transition-transform duration-200;
 }
 
 .tripAdvisorIcon {
-  @apply w-7 h-7 mx-1 hover:scale-110 transition-transform duration-200;
+  @apply w-7 h-7 mx-1 
+  hover:scale-110 transition-transform duration-200;
 }
 
 /* Dark mode button */
 .darkToggle {
-  @apply cursor-pointer;
+  @apply cursor-pointer ;
 }
+.darkToggle:hover {
+  @apply text-yellow-300;
+}
+
 
 /* Menu toggle */
 .menuToggle {
@@ -122,7 +137,8 @@
 
 /* Mobile menu */
 .mobileMenu {
-  @apply hidden flex-col absolute top-full right-4 bg-black/60 backdrop-blur-lg rounded-lg shadow-lg p-4 space-y-2 transition-all duration-300 ease-in-out;
+  @apply hidden flex-col absolute top-full right-4 bg-black/60 backdrop-blur-lg rounded-lg 
+  shadow-lg p-4 space-y-2 transition-all duration-300 ease-in-out;
 }
 
 .mobileMenu a {
@@ -133,6 +149,8 @@
   @apply flex;
 }
 
+
+/*-----------------------------------------------------------------------------------------------------------------*/
 /* hero section styles */
 .herobar {
     @apply bg-blue-200;
@@ -140,7 +158,7 @@
 
 
 
-
+/*----------------------------------------------------------------------------------------------------------------*/
 /* HeighLight.css */
 /* Container */
 .highlight-container {
@@ -156,7 +174,8 @@
 
 
 .image-wrapper {
-  @apply   m-[1px] max-w-[200px] min-w-[150px] md:min-w-[250px] h-full overflow-hidden transform -skew-x-6 ;
+  @apply   m-[1px] max-w-[200px] min-w-[150px] md:min-w-[250px] h-full 
+  overflow-hidden transform -skew-x-6 ;
 }
 
 .image-wrapper img {
@@ -178,7 +197,8 @@
 
 /* Container for title + button */
 .image-wrapper .hover-content {
-  @apply absolute inset-0 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300;
+  @apply absolute inset-0 flex flex-col justify-center items-center 
+  opacity-0 transition-opacity duration-300;
 }
 
 .image-wrapper:hover .hover-content {
@@ -192,10 +212,11 @@
 
 /* See More button below title */
 .see-more-btn {
-  @apply px-4 py-1 bg-orange-400 text-white font-semibold rounded-full shadow-md hover:bg-orange-500 transition;
+  @apply px-4 py-1 bg-orange-400 text-white font-semibold rounded-full shadow-md 
+  hover:bg-orange-500 transition;
 }
 
-
+/*-------------------------------------------------------------------------------------------------------------------*/
 
 
 
@@ -230,7 +251,7 @@
 .overviewheding {
     @apply text-4xl font-bold text-white flex  mt-2 pl-4;
 }
-
+/*------------------------------------------------------------------------------------------------------------------*/
 
 /* --- Attraction Bar --- */
 .attractionBar {
@@ -247,7 +268,8 @@
 
 /* Full-width + full-height image cards with overlay title */
 .attCardVertical {
-  @apply relative w-full max-w-7xl h-screen overflow-hidden shadow-md transition-transform duration-300 hover:scale-105;
+  @apply relative w-full max-w-7xl h-screen overflow-hidden shadow-md transition-transform duration-300 
+  hover:scale-105;
 }
 
 .attImgVertical {
@@ -261,71 +283,79 @@
 
 /* Button styling */
 .seeMoreBtn {
-  @apply mt-8 px-6 py-2 bg-[#D9D9D9] text-black rounded-full text-base font-medium transition-colors duration-300 hover:bg-[#a83535] hover:text-white;
+  @apply mt-8 px-6 py-2 bg-[#D9D9D9] text-black rounded-full text-base 
+  font-medium transition-colors duration-300 
+  hover:bg-[#a83535] hover:text-white;
 }
 
 
+/*-----------------------------------------------------------------------------------------------------------------*/
 
-
-/* Destination Bar*/
+/* Destination Bar */
 .destination-section {
-  @apply py-10 px-5 w-full;
+  @apply py-20 px-4 sm:py-10 sm:px-6 lg:px-10 w-full bg-white;
 }
 
 
 .destination-title {
-  @apply text-xl font-medium mb-6;
+  @apply text-lg sm:text-xl md:text-2xl font-medium mb-6;
 }
 
 /* Horizontal scroll container */
 .destination-scroll {
-  @apply flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth;
+  @apply flex
+        gap-4
+        overflow-x-auto 
+        scrollbar-hide 
+        scroll-smooth;
 }
 
 /* Box styles */
 .destination-box {
-  @apply min-w-[350px] w-[400px] h-[550px] bg-gray-400 backdrop-blur-3xl rounded-lg shadow-md flex-shrink-0 flex flex-col;
+  @apply w-full sm:w-[300px] md:w-[350px] lg:w-[400px] 
+        backdrop-blur-3xl rounded-lg shadow-md flex-shrink-0 flex flex-col bg-gray-400;
 }
 
-
-
+/* Image */
 .destination-image {
-  @apply w-full h-50 object-cover rounded-t-lg;
+  @apply w-full aspect-[16/9] object-cover rounded-t-lg;
 }
 
-.destination-area{
-  @apply p-4 text-white flex flex-col justify-between h-70; 
+.destination-textArea {
+  @apply p-4  flex flex-col justify-between flex-grow;
 }
 
 .destination-caption {
-  @apply text-xl font-semibold mb-1 ;
+  @apply text-lg sm:text-xl font-semibold mb-2 text-white border-b border-white pb-2;
+}
+.destination-duration {
+  @apply text-sm sm:text-base mb-3 text-white;
 }
 
-.destination-duration{
-  @apply text-sm mb-2;
+.destination-subTitle {
+  @apply text-lg sm:text-lg font-semibold mt-2 mb-1 text-white border-b border-white pb-2;
 }
 
-.destination-subTitle{
-  @apply font-semibold mb-2;
+.destination-description {
+  @apply list-disc list-inside text-sm sm:text-base text-white;
 }
 
-.destination-description{
-  @apply list-disc list-inside text-sm mb-3 h-35 overflow-y-auto;
+/* Button */
+.more-details-button {
+  @apply w-full bg-blue-600 text-white px-3 py-2 sm:px-4 sm:py-2.5 rounded 
+  hover:bg-blue-700 text-xs sm:text-sm md:text-base;
 }
 
-.more-details-button{
-  @apply w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 ;
-}
-.buttonSection{
-  @apply m-4 flex justify-center;
+.buttonSection {
+  @apply m-3 sm:m-4 flex;
 }
 
-.destination-scroll-btn{
+/* Scroll button section */
+.destination-scroll-btn {
   @apply flex items-center;
 }
 
-
-
+/*----------------------------------------------------------------------------------------------------------------------------------*/
 
 /*planning tools*/
 
@@ -336,7 +366,7 @@
 
 /* Dark overlay for readability */
 .overlay {
-  @apply   p-10 rounded-2xl w-full ;
+  @apply p-10 rounded-2xl w-full ;
   background-image: url('../image/hikkaduwa-mobile.jpg')
 }
 
@@ -359,6 +389,10 @@
   justify-content: space-between;
 }
 
+.planning-card:hover {
+  @apply border-white shadow-white/50 shadow-md;
+}
+
 /* Card title */
 .card-title {
   @apply text-lg font-semibold mb-3 text-white;
@@ -369,14 +403,16 @@
   @apply text-sm text-gray-200 leading-relaxed;
 }
 
-/* Gray placeholder button */
-.card-btn {
-  @apply w-40 h-4 bg-gray-300 rounded-full mx-auto mt-4;
-    animation: pulse 1.5s infinite;
+.card-btn{
+  @apply border-t border-white
+}
+
+.card-btn:hover{
+  @apply text-yellow-300;
 }
 
 
-
+/*----------------------------------------------------------------------------------------------------------------------*/
 
 
 /*photo section*/
@@ -426,7 +462,7 @@
   @apply bg-gray-800/80 scale-105;
 }
 
-
+/*----------------------------------------------------------------------------------------------------------------*/
 
 /*logo section*/
 
@@ -438,17 +474,15 @@
   @apply h-170 object-contain;
 }
 
+/*----------------------------------------------------------------------------------------------------------------*/
 
-
-
-
-/*footer section*/
+/*find Us section*/
 .findus-container {
   @apply w-full text-white text-center py-6 border-b border-gray-400 ;
 }
 
 .findus-title {
-  @apply text-lg font-medium mb-4;
+  @apply text-2xl font-medium mb-4;
 }
 
 .findus-icons {
@@ -459,15 +493,19 @@
   @apply w-10 h-10 bg-gray-400 rounded-full;
 }
 
+/*----------------------------------------------------------------------------------------------------------------*/
 
 
-
-/*footer section*/
-
+/* footer section */
 .footerbar-container {
-  @apply w-full text-white py-6 flex flex-col md:flex-row justify-around text-sm bg-cover bg-center bg-no-repeat;
-  background-image: url('../image/srilankanbeauty.png');
+  @apply w-full h-full text-white py-6 
+         flex flex-col md:flex-row justify-around text-base
+         bg-no-repeat bg-cover bg-center;
+
+  background-image: url('../image/BeautyOfsriLankan.png'); /* mobile image */
 }
+
+
 
 
 .footerbar-section {

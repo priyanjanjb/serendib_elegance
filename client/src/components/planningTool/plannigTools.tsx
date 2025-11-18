@@ -1,4 +1,5 @@
 import '../../assets/styleSheet/style.css'
+import {Link} from 'react-router-dom';
 
 const cards = [
   { 
@@ -50,8 +51,10 @@ const PlanningTools = () => {
             <div key={index} className="planning-card">
               <h3 className="card-title">{card.title}</h3>
               <p className="card-text">{card.description}</p>
-              <div className="card-btn"></div>
-            </div>
+                <Link to="/" className="card-btn">
+                READ FULL ARTICLE 
+                &#8594;</Link> 
+              </div>
           ))}
         </div>
       </div>

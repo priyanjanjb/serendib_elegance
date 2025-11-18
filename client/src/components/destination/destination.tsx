@@ -95,6 +95,7 @@ const DestinationSection = () => {
     <div className="destination-section">
       <div className="destination-wrapper">
         <h2 className="destination-title">Destination</h2>
+        
         <div className="destination-scroll" ref={scrollRef}>
           {/* Left Scroll Button */}
           <div className='destination-scroll-btn'>
@@ -105,12 +106,11 @@ const DestinationSection = () => {
           {destinations.map((dest, index) => (
             <div key={index} className="destination-box">
               <img
-                src={dest.image}
-                alt={dest.title}
-                className="destination-image"
-              />
-              <div className="destination-area">
-                <div className="destination-">
+              className="destination-image"
+              src={dest.image} alt={dest.title}/>
+
+              <div className="destination-textArea">
+                <div className='text'>
                   <h3 className="destination-caption">{dest.title}</h3>
                   <p className="destination-duration">{dest.duration}</p>
                   <h4 className="destination-subTitle">Tour Highlights:</h4>
@@ -120,13 +120,13 @@ const DestinationSection = () => {
                     ))}
                   </ul>
                 </div>
-                <div className="buttonSection">
+              </div>
+              <div className="buttonSection">
                   <button className="more-details-button">
                     More Details
                   </button>
-                </div>
-                
               </div>
+
             </div>
           ))}
           <div className='destination-scroll-btn'>
@@ -138,8 +138,7 @@ const DestinationSection = () => {
           
         </div>
       </div>
-      
-      
+
     </div>
   );
 };
