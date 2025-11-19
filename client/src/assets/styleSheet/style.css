@@ -56,6 +56,19 @@
 }
 
 
+.popButton {
+  @apply fixed bottom-65 right-0 opacity-40 bg-yellow-600 text-white px-5 py-3 rounded-l-full shadow-lg 
+         transition-all duration-300 z-50;
+ 
+}
+
+
+.popButton:hover {
+  @apply scale-140 bg-yellow-500 opacity-100;
+}
+
+
+
 /*----------------------------------------------------------------------------------------------------------------*/
 /* Navigation bar styles */
 .navBar {
@@ -296,24 +309,24 @@
   @apply py-20 px-4 sm:py-10 sm:px-6 lg:px-10 w-full bg-white;
 }
 
-
 .destination-title {
   @apply text-lg sm:text-xl md:text-2xl font-medium mb-6;
 }
 
 /* Horizontal scroll container */
 .destination-scroll {
-  @apply flex
-        gap-4
-        overflow-x-auto 
-        scrollbar-hide 
-        scroll-smooth;
+  @apply 
+    bg-green-200 
+    flex 
+    overflow-x-auto 
+    scrollbar-hide 
+    scroll-smooth
 }
 
 /* Box styles */
 .destination-box {
-  @apply w-full sm:w-[300px] md:w-[350px] lg:w-[400px] 
-        backdrop-blur-3xl rounded-lg shadow-md flex-shrink-0 flex flex-col bg-gray-400;
+  @apply md:w-[33%] w-[90%]  
+  backdrop-blur-3xl rounded-xl shadow-md flex-shrink-0 flex flex-col bg-gray-400 m-3;
 }
 
 /* Image */

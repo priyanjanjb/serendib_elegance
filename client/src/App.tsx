@@ -11,10 +11,12 @@ import PhotoSection from "./components/photoSection/photoSection"
 import '../src/assets/styleSheet/style.css'
 import FindUs from "./components/findUs/FindUs"
 import ShareThought from '../src/components/shareThought/shareThought'
+import { Button } from "./components/popItems/popItems"
 function App() {
 
   return (
     <div className="backPanel">
+        <Button className="popButton" />
         <HeroBar/>
         <OverView/>
         <HeighLight />
@@ -25,7 +27,11 @@ function App() {
         <FindUs />
         <ShareThought />
         <FooterBar />
-    </div>
+
+        <button className="popButton">
+          Book Now
+        </button>
+        </div>
   )
 }
 

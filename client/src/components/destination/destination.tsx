@@ -21,15 +21,14 @@ const DestinationSection = () => {
 
   const destinations = [
     {
-      image: leopard,
-      title: "Sri Lanka Wildlife Explorer",
-      duration: "9 Nights / 10 Days",
+      image: temple,
+      title: "Sri Lanka Highlights Express",
+      duration: "3 Nights / 4 Days",
       highlights: [
-        "Dolphin and whale watching in Kalpitiya (Dec–Apr).",
-        "Leopard and elephant safaris in Wilpattu National Park.",
-        "Trekking across Horton Plains National Park.",
-        "Birdwatching and jungle walk in Sinharaja Rainforest.",
-        "Udawalawe Safari to see elephants in their natural habitat.",
+        "Explore the Temple of the Tooth Relic in Kandy.",
+        "Ride the scenic train through Hill Country.",
+        "Hike to Little Adam’s Peak or Nine Arch Bridge in Ella.",
+        "Relax on the pristine southern beaches.",
       ],
     },
     {
@@ -52,28 +51,17 @@ const DestinationSection = () => {
         "Relaxing on the beaches of Pasikudah.",
       ],
     },
+    
     {
-      image: temple,
-      title: "Sri Lanka Highlights Express",
-      duration: "3 Nights / 4 Days",
+      image: leopard,
+      title: "Sri Lanka Wildlife Explorer",
+      duration: "9 Nights / 10 Days",
       highlights: [
-        "Explore the Temple of the Tooth Relic in Kandy.",
-        "Ride the scenic train through Hill Country.",
-        "Hike to Little Adam’s Peak or Nine Arch Bridge in Ella.",
-        "Relax on the pristine southern beaches.",
-      ],
-    },
-    {
-      image: sigiriya,
-      title: "Sri Lanka Adventure Discovery",
-      duration: "14 Nights / 15 Days - Winter Tour",
-      highlights: [
-        "Discover Sigiriya Rock Fortress and explore village life.",
-        "Trek through Meemure in the Knuckles Range.",
-        "Ride the scenic train to Ella and hike Little Adam’s Peak.",
-        "Experience white-water rafting in Kitulgala.",
-        "Safari in Yala for leopards and elephants.",
-        "Unwind on the southern beaches.",
+        "Dolphin and whale watching in Kalpitiya (Dec–Apr).",
+        "Leopard and elephant safaris in Wilpattu National Park.",
+        "Trekking across Horton Plains National Park.",
+        "Birdwatching and jungle walk in Sinharaja Rainforest.",
+        "Udawalawe Safari to see elephants in their natural habitat.",
       ],
     },
     {
@@ -89,6 +77,20 @@ const DestinationSection = () => {
         "Explore the ancient city of Anuradhapura.",
       ],
     },
+    {
+      image: sigiriya,
+      title: "Sri Lanka Adventure Discovery",
+      duration: "14 Nights / 15 Days - Winter Tour",
+      highlights: [
+        "Discover Sigiriya Rock Fortress and explore village life.",
+        "Trek through Meemure in the Knuckles Range.",
+        "Ride the scenic train to Ella and hike Little Adam’s Peak.",
+        "Experience white-water rafting in Kitulgala.",
+        "Safari in Yala for leopards and elephants.",
+        "Unwind on the southern beaches.",
+      ],
+    },
+    
   ];
 
   return (
