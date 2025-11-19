@@ -30,9 +30,9 @@ function NavBar() {
       {/* Right - Icons and controls */}
       <div className="navRight">
         <div className="socialIcons">
-          {facebook({className:"fbIcon"})}
-          {instagram({className:"insIcon"})}
-          {tripadvisor({className:"trpadvsrIcon"})}
+          {facebook()}
+          {instagram()}
+          {tripadvisor()}
         </div>
 
         <button onClick={toggleDarkMode} className="darkToggle" aria-label="Toggle Dark Mode">

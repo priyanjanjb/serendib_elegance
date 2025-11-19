@@ -7,13 +7,13 @@ function FindUs() {
       <h2 className="findus-title">Find Us</h2>
       <div className="findus-icons">
         <div className="findus-fb">
-          {facebook({className:"fbIcon"})}
+          {facebook()}
         </div>
         <div className="findus-inster">
-          {instagram({className:"insIcon"})}
+          {instagram()}
         </div>
         <div className="findus-tripadvisor">
-          {tripadvisor({className:"tripAdvisorIcon"})}
+          {tripadvisor()}
         </div>
       </div>
     </div>

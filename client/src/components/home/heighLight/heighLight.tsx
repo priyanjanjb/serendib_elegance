@@ -10,8 +10,9 @@ import hikkdu from '../../../assets/image/hikkadu.png';
 import waterfall from '../../../assets/image/waterfall.jpg';
 import touris from '../../../assets/image/tuarist.jpg';
 import bath from '../../../assets/image/bath.jpg';
-
+import { useNavigate } from "react-router-dom";
 function HeighLight() {
+  const navigate = useNavigate();
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
   const images = [
@@ -38,6 +39,17 @@ function HeighLight() {
     "Ayuruweda",
   ];
 
+  const links = [
+  "/food",
+  "/hills",
+  "/culture",
+  "/temple",
+  "/seegiriya",
+  "/beach",
+  "/waterfall",
+  "/tourist",
+  "/ayuruweda",
+];
   const scroll = (direction: 'left' | 'right') => {
   const { current } = scrollRef;
   if (current) {
@@ -63,7 +75,7 @@ function HeighLight() {
               {/* Title + See More button */}
               <div className="hover-content">
                 <div className="slot-title">{names[index]}</div>
-                <button className="see-more-btn"> See More</button>
+                <button className="see-more-btn" onClick={() => navigate(links[index])}>See More</button>
               </div>
             </div>
 

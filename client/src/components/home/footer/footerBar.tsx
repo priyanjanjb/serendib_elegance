@@ -30,9 +30,9 @@ function FooterBar() {
       <div className="footerbar-right">
         <h4 className="footerbar-title">Follow Us</h4>
         <div className="footerbar-icons">
-          {facebook({className:"fbIcon"})}
-          {instagram({className:"insIcon"})}
-          {tripadvisor({className:"tripAdvisorIcon"})}
+          {facebook()}
+          {instagram()}
+          {tripadvisor()}
         </div>
       </div>
     </div>
