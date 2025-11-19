@@ -1,8 +1,8 @@
 import  { useState } from "react";
-import '../../assets/styleSheet/style.css'
-import rafting from '../../assets/image/rafting.jpg';
-import ab from '../../assets/image/ab.jpg';
-import spices from '../../assets/image/spices.jpg';
+import '../../../assets/styleSheet/style.css'
+import rafting from '../../../assets/image/rafting.jpg';
+import ab from '../../../assets/image/ab.jpg';
+import spices from '../../../assets/image/spices.jpg';
 function PhotoSection() {
   const images = [
     rafting,

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import logo from "../../assets/image/logo.png";
+import logo from "../../../assets/image/logo.png";
 import { Moon, Sun, Menu, ChevronDown } from "lucide-react";
-import "../../assets/styleSheet/style.css"; 
-import { facebook , instagram , tripadvisor } from "../../assets/image/svg/svgIcons";
+import "../../../assets/styleSheet/style.css"; 
+import { facebook , instagram , tripadvisor } from "../../../assets/image/svg/svgIcons";
 
 function NavBar() {
   const [darkMode, setDarkMode] = useState(false);

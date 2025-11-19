@@ -1,4 +1,4 @@
-import '../../assets/styleSheet/style.css'
+import '../../../assets/styleSheet/style.css'
 function overView() {
   return (
     <div className='overview'>

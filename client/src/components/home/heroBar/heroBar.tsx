@@ -1,4 +1,4 @@
-import '../../assets/styleSheet/style.css';
+import '../../../assets/styleSheet/style.css';
 import NavBar from '../navBar/navBar';
 import ReactPlayer from 'react-player';
 

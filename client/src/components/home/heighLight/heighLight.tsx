@@ -1,15 +1,15 @@
 import { useRef } from 'react';
-import '../../assets/styleSheet/style.css';
+import '../../../assets/styleSheet/style.css';
 
-import spices from '../../assets/image/spices.jpg';
-import tealeaf from '../../assets/image/teaLeaf.jpg';
-import pagoda from '../../assets/image/pagoda.jpg';
-import dalada from '../../assets/image/daladaPerahera.jpg';
-import seegir from '../../assets/image/seegiriya.jpg';
-import hikkdu from '../../assets/image/hikkadu.png';
-import waterfall from '../../assets/image/waterfall.jpg';
-import touris from '../../assets/image/tuarist.jpg';
-import bath from '../../assets/image/bath.jpg';
+import spices from '../../../assets/image/spices.jpg';
+import tealeaf from '../../../assets/image/teaLeaf.jpg';
+import pagoda from '../../../assets/image/pagoda.jpg';
+import dalada from '../../../assets/image/daladaPerahera.jpg';
+import seegir from '../../../assets/image/seegiriya.jpg';
+import hikkdu from '../../../assets/image/hikkadu.png';
+import waterfall from '../../../assets/image/waterfall.jpg';
+import touris from '../../../assets/image/tuarist.jpg';
+import bath from '../../../assets/image/bath.jpg';
 
 function HeighLight() {
   const scrollRef = useRef<HTMLDivElement | null>(null);

@@ -1,12 +1,12 @@
 import { useRef } from 'react';
 
-import "../../assets/styleSheet/style.css";
-import leopard from "../../assets/image/leopard.jpg";
-import nineArch from "../../assets/image/nineArch.jpg";
-import surf from "../../assets/image/surf.jpg";
-import temple from "../../assets/image/daladaPerahera.jpg";
-import sigiriya from "../../assets/image/seegiriya.jpg";
-import statue from "../../assets/image/statue.jpg";
+import "../../../assets/styleSheet/style.css";
+import leopard from "../../../assets/image/leopard.jpg";
+import nineArch from "../../../assets/image/nineArch.jpg";
+import surf from "../../../assets/image/surf.jpg";
+import temple from "../../../assets/image/daladaPerahera.jpg";
+import sigiriya from "../../../assets/image/seegiriya.jpg";
+import statue from "../../../assets/image/statue.jpg";
 
 const DestinationSection = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);

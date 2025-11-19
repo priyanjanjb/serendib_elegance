@@ -1,6 +1,6 @@
 
-import '../../assets/styleSheet/style.css'; // Import external CSS file
-import { facebook,instagram , tripadvisor} from '../../assets/image/svg/svgIcons';
+import '../../../assets/styleSheet/style.css'; // Import external CSS file
+import { facebook,instagram , tripadvisor} from '../../../assets/image/svg/svgIcons';
 function FindUs() {
   return (
     <div className="findus-container">

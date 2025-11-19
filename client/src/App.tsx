@@ -1,17 +1,16 @@
-
-import HeroBar from "./components/heroBar/heroBar"
-import OverView from "./components/overView/overView"
-import HeighLight from "./components/heighLight/heighLight"
-//import AttractionBar from "./components/attraction/attractionBar"
-import LogoSection from "./components/logoSection/logoSection"
-import PlanningTools from "./components/planningTool/plannigTools"
-import Destination from "./components/destination/destination"
-import FooterBar from "./components/footer/footerBar"
-import PhotoSection from "./components/photoSection/photoSection"
+import HeroBar from "./components/home/heroBar/heroBar"
+import OverView from "./components/home/overView/overView"
+import HeighLight from "./components/home/heighLight/heighLight"
+import LogoSection from "./components/home/logoSection/logoSection"
+import PlanningTools from "./components/home/planningTool/plannigTools"
+import Destination from "./components/home/destination/destination"
+import FooterBar from "./components/home/footer/footerBar"
+import PhotoSection from "./components/home/photoSection/photoSection"
 import '../src/assets/styleSheet/style.css'
-import FindUs from "./components/findUs/FindUs"
-import ShareThought from '../src/components/shareThought/shareThought'
-import { Button } from "./components/popItems/popItems"
+import FindUs from "./components/home/findUs/FindUs"
+import ShareThought from './components/home/shareThought/shareThought'
+import { Button } from "./components/home/popItems/popItems"
+
 function App() {
 
   return (
@@ -27,10 +26,6 @@ function App() {
         <FindUs />
         <ShareThought />
         <FooterBar />
-
-        <button className="popButton">
-          Book Now
-        </button>
         </div>
   )
 }

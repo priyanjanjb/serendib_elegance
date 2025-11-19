@@ -1,4 +1,4 @@
-import '../../assets/styleSheet/style.css'
+import '../../../assets/styleSheet/style.css'
 import {Link} from 'react-router-dom';
 
 const cards = [

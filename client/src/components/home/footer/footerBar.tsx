@@ -1,5 +1,5 @@
-import "../../assets/styleSheet/style.css"; // External Tailwind CSS file
-import { facebook , instagram , tripadvisor } from "../../assets/image/svg/svgIcons";
+import "../../../assets/styleSheet/style.css"; // External Tailwind CSS file
+import { facebook , instagram , tripadvisor } from "../../../assets/image/svg/svgIcons";
 function FooterBar() {
   return (
     <div className="footerbar-container">
